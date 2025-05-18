@@ -2,47 +2,87 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Paul Faller – Handball & Technik</title>
+  <title>Paul Faller – HSC & Technik</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    /* Apple-Style */
     body {
-      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #f0f0f5, #dce3f0);
+      color: #1d1d1f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding: 40px;
-      background-color: #f4f4f4;
-      color: #333;
-      max-width: 800px;
-      margin: auto;
     }
     h1 {
-      color: #0077cc;
+      font-size: 2.5em;
+      color: #007aff;
+      text-align: center;
+      margin-bottom: 0.2em;
     }
-    a {
-      color: #0066aa;
+    p {
+      text-align: center;
+      font-size: 1.1em;
+      max-width: 700px;
+    }
+    .btn-group {
+      margin: 30px 0;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    a.button {
+      background-color: white;
+      border-radius: 12px;
+      padding: 12px 24px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: #007aff;
+      font-weight: 600;
+      transition: transform 0.2s ease;
+    }
+    a.button:hover {
+      transform: scale(1.05);
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 800px;
+      height: 500px;
+      margin: 40px 0;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #999;
     }
   </style>
 </head>
 <body>
-  <h1>👋 Hallo! Ich bin Paul Faller</h1>
-  <p>Ich gehe aufs Friedrich-Hecker-Gymnasium, spiele Handball beim <strong>HSC Radolfzell</strong> 🏐 und bin begeistert von Technik & Apple 🍏.</p>
+  <h1>🍏 Paul Faller</h1>
+  <p>Ich gehe aufs Friedrich-Hecker-Gymnasium, spiele Handball beim <strong>HSC Radolfzell</strong> 🏐 und liebe alles rund um Technik & Apple.</p>
 
-  <h2>🏆 Handball</h2>
-  <ul>
-    <li>Rückraum Mitte beim HSC Radolfzell</li>
-    <li><a href="https://www.handball.net/ligen/handball4all.suedbaden.gjd-bol-er_hb/spielplan/spieltage/handball4all.suedbaden.133396/spiele/handball4all.suedbaden.8161856" target="_blank">Spielbericht 1 (29.03.2025)</a></li>
-  </ul>
+  <div class="btn-group">
+    <a href="https://instagram.com/paul_faller_" class="button" target="_blank">📸 Instagram</a>
+    <a href="https://www.friedrich-hecker-gymnasium.de/" class="button" target="_blank">🏫 Schule</a>
+    <a href="https://www.hsc-radolfzell.de/" class="button" target="_blank">🏐 HSC Radolfzell</a>
+    <a href="https://www.handball.net/ligen/handball4all.suedbaden.gjd-bol-er_hb/tabelle" class="button" target="_blank">📊 Ligatabelle</a>
+  </div>
 
-  <h2>💻 Technik</h2>
-  <ul>
-    <li>Ich entwickle in Swift</li>
-    <li>Ich bin Apple Beta Tester</li>
-    <li>Ich möchte meine eigene Bild-KI bauen</li>
-  </ul>
+  <!-- Optional: Ligatabelle -->
+  <iframe src="https://www.handball.net/ligen/handball4all.suedbaden.gjd-bol-er_hb/tabelle"></iframe>
 
-  <h2>📸 Instagram</h2>
-  <p><a href="https://instagram.com/paul_faller_" target="_blank">@paul_faller_</a></p>
+  <!-- Optional: Liveticker -->
+  <iframe src="https://www.handball.net/ligen/handball4all.suedbaden.gjd-bol-er_hb/spielplan" title="Liveticker / Spielplan"></iframe>
 
   <footer>
-    <hr>
-    <p>&copy; 2025 Paul Faller</p>
+    <p>© 2025 Paul Faller – Powered by GitHub Pages</p>
   </footer>
 </body>
 </html>
